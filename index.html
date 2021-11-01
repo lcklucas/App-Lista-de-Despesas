@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <title>Despesas</title>
+</head>
+<body>
+    <main>
+        <aside class="menu__aside">
+            <i class="ri-settings-3-fill"></i>
+            <div class="profile__user-photo">
+                <img src="/assets/img/user-photo.png" alt="">
+            </div>
+
+            <h3 class="profile__user-name">User</h3>
+
+            <h4>despesa total de janeiro</h4>
+            <span id="profile__user-gastos">R$</span>
+
+            <button class="profile__change-page">
+                <a href="consulta.html">ver registros</a>
+               
+            </button>
+        </aside>
+
+        <div class="app__data">
+        
+                <div class="searchbar">
+                <h5>Pesquise uma despesa</h5>
+                <i class="ri-search-line"></i>
+            </div>
+
+            <h1 class="page__title">Registre uma nova despesa</h1>
+
+            <div class="input__data">
+                <select name="ano" id="ano">
+                    <option value="">Ano</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                    <option value="2022">2022</option>
+                </select>
+
+                <select name="mes" id="mes">
+                    <option disabled selected value="">Mês</option>
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+
+                <input type="text" class="form-control" placeholder="Dia" id="dia">
+
+                <select class="form-control" id="tipo">
+                    <option disabled selected value="">Tipo</option>
+                    <option value="1">Alimentação</option>
+                    <option value="2">Educação</option>
+                    <option value="3">Lazer</option>
+                    <option value="4">Saúde</option>
+                    <option value="5">Transporte</option>
+                </select>
+                
+                <input type="text" class="form-control" placeholder="Valor" id="valor">
+
+                <input type="text" class="form-control" placeholder="Descrição" id="descricao">
+
+                <button class="btn" id="cadastrar-despesa">
+                    <i class="ri-add-fill"></i>
+                </button>
+            </div>
+    </div>
+
+    </main>
+</body>
+</html>
